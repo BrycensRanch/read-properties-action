@@ -43,7 +43,7 @@
 			{
 				"assets": [
 					{
-						"path": "libs"
+						"path": "dist/index.js"
 					}
 				],
 				"addReleases": "bottom"

@@ -90,6 +90,11 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
+# Built TypeScript files for Jest, does not need to be commited
+# The action is "packaged" in a way where this folder is not needed
+**/lib
+lib
+
 # OS metadata
 .DS_Store
 Thumbs.db

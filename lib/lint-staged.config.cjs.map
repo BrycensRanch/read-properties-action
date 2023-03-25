@@ -1,0 +1,1 @@
+{"version":3,"file":"lint-staged.config.cjs","sourceRoot":"","sources":["../lint-staged.config.cjs"],"names":[],"mappings":"AAAA,MAAM,CAAC,OAAO,GAAG;IAChB,mBAAmB,EAAE,CAAC,cAAc,EAAE,QAAQ,EAAE,kBAAkB,CAAC;IACnE,aAAa,EAAE,GAAG,EAAE,CAAC,qBAAqB;IAC1C,QAAQ,EAAE,CAAC,kBAAkB,CAAC;CAC9B,CAAC"}

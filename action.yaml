@@ -1,6 +1,6 @@
-name: read-properties
+name: read-properties-action
 author: Brycen G <brycengranville@outlook.com>
-description: GitHub Action to read values from .properties files, including Java
+description: Pure TypeScript GitHub Action to read values from .properties files, with support for glob patterns
 
 inputs:
   file:
@@ -23,4 +23,4 @@ branding:
 
 runs:
   using: 'node16'
-  main: 'lib/main.js'
+  main: 'dist/index.js'

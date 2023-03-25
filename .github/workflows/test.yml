@@ -9,35 +9,47 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: 📥 Monorepo install all deps & pnpm
-        uses: ./.github/actions/pnpm-install
 
       - uses: ./
         id: success
         with:
-          file: test/fixtures/gradle.properties
+          file: tests/fixtures/gradle.properties
           property: pluginName
       - run: '[[ "TownyPlus" == "${{ steps.success.outputs.value }}" ]]'
 
       - uses: ./
         id: default
         with:
-          file: test/fixtures/gradle.properties
+          file: tests/fixtures/gradle.properties
           property: version
       - run: '[[ "1.1.0-alpha.16" == "${{ steps.default.outputs.value }}" ]]'
 
       - uses: ./
-        id: unexisting-file
+        id: unexisting-property
         with:
-          file: test/fixtures/gradle.properties
+          file: tests/fixtures/gradle.properties
           property: name
           default: Anakin Skywalker
-      - run: '[[ "Anakin Skywalker" == "${{ steps.unexisting-file.outputs.value }}" ]]'
+      - run: '[[ "Anakin Skywalker" == "${{ steps.unexisting-property.outputs.value }}" ]]'
+      - uses: ./
+        id: glob-test
+        with:
+          file: "**/*.properties"
+          property: author
+          default: Anakin Skywalker
+      - run: '[[ "Anakin Skywalker" == "${{ steps.glob-test.outputs.value }}" ]]'
+      - uses: ./
+        id: glob-test2
+        with:
+          file: "**/gradle.properties"
+          property: author
+          default: Anakin Skywalker
+      - run: '[[ "Romvnly" == "${{ steps.glob-test2.outputs.value }}" ]]'
 
       - uses: ./
         id: all
         with:
-          file: test/fixtures/gradle.properties
+          file: tests/fixtures/gradle.properties
           all: true
       - run: '[[ "1.1.0-alpha.16" == "${{ steps.all.outputs.version }}" ]]'
       - run: '[[ "1.16" == "${{ steps.all.outputs.apiVersion }}" ]]'
@@ -46,7 +58,14 @@ jobs:
       - uses: ./
         id: failure
         with:
-          file: test/fixtures/da.properties
+          file: tests/fixtures/da.properties
           property: name
         continue-on-error: true
       - run: '[[ "failure" == "${{ steps.failure.outcome }}" ]]'
+      - uses: ./
+        id: failure2
+        with:
+          file: tests/fixtures/trash.properties
+          property: good
+        continue-on-error: true
+      - run: '[[ "failure" == "${{ steps.failure2.outcome }}" ]]'
