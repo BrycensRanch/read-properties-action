@@ -6,7 +6,7 @@ const fs = require("fs"),
 	{ dirname: dirName, basename: baseName } = require("path"),
 	{ lstatSync: fileInfo } = require("fs");
 
-const readdirSync = (p, a = [], ignored = ["node_modules", "lib", "coverage"]) => {
+const readdirSync = (p, a = [], ignored = ["node_modules", "lib", "coverage", ".git"]) => {
 		if (fs.statSync(p).isDirectory()) {
 			fs.readdirSync(p)
 				.filter(f => {
