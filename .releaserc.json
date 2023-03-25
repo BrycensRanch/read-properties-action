@@ -16,7 +16,12 @@
 		"@semantic-release/commit-analyzer",
 		"@semantic-release/release-notes-generator",
 		"@semantic-release/changelog",
-		"semantic-release-major-tag",
+		[
+			"semantic-release-major-tag",
+			{
+				"customTags": ["v${major}", "v${major}.${minor}"]
+			}
+		],
 		[
 			"@semantic-release/git",
 			{
