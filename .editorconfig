@@ -1,0 +1,15 @@
+[*.ts]
+end_of_line = lf
+indent_style = tab
+
+[*.sh]
+end_of_line = lf
+indent_style = tab
+
+[*.json]
+end_of_line = lf
+indent_style = tab
+
+[*.js]
+end_of_line = lf
+indent_style = tab

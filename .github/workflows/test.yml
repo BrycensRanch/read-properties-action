@@ -1,0 +1,50 @@
+name: Integration Tests
+
+on:
+  push:
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: ./lib/main.js
+        id: success
+        with:
+          file: test/fixtures/gradle.properties
+          property: pluginName
+      - run: '[[ "TownyPlus" == "${{ steps.success.outputs.value }}" ]]'
+
+      - uses: ./lib/main.js
+        id: default
+        with:
+          file: test/fixtures/gradle.properties
+          property: version
+      - run: '[[ "1.1.0-alpha.16" == "${{ steps.default.outputs.value }}" ]]'
+
+      - uses: ./lib/main.js
+        id: unexisting-file
+        with:
+          file: test/fixtures/gradle.properties
+          property: name
+          default: Anakin Skywalker
+      - run: '[[ "Anakin Skywalker" == "${{ steps.unexisting-file.outputs.value }}" ]]'
+
+      - uses: ./lib/main.js
+        id: all
+        with:
+          file: test/fixtures/gradle.properties
+          all: true
+      - run: '[[ "1.1.0-alpha.16" == "${{ steps.all.outputs.version }}" ]]'
+      - run: '[[ "1.16" == "${{ steps.all.outputs.apiVersion }}" ]]'
+      - run: '[[ "TownyPlus" == "${{ steps.all.outputs.pluginName }}" ]]'
+
+      - uses: ./lib/main.js
+        id: failure
+        with:
+          file: test/fixtures/da.properties
+          property: name
+        continue-on-error: true
+      - run: '[[ "failure" == "${{ steps.failure.outcome }}" ]]'

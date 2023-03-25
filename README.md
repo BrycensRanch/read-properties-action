@@ -1,103 +1,49 @@
-# typescript-action [![ts](https://github.com/int128/typescript-action/actions/workflows/ts.yaml/badge.svg)](https://github.com/int128/typescript-action/actions/workflows/ts.yaml)
+# BrycensRanch/read-properties-action
 
-This is a template of TypeScript action.
-Inspired from https://github.com/actions/typescript-action.
+GitHub Action to read values from Java's `.properties` files.
 
+## Usage
 
-## Features
-
-- Ready to develop with the minimum configs
-  - Yarn
-  - Prettier
-  - ESLint
-  - tsconfig
-  - Jest
-- Automated continuous release
-- Keep consistency of generated files
-- Shipped with Renovate config
-
-
-## Getting Started
-
-Click `Use this template` to create a repository.
-
-An initial release `v0.0.0` is automatically created by GitHub Actions.
-You can see the generated files in `dist` directory on the tag.
-
-Then checkout your repository and test it. Node.js is required.
-
-```console
-$ git clone https://github.com/your/repo.git
-
-$ yarn
-$ yarn test
-```
-
-Create a pull request for a change.
-
-```console
-$ git checkout -b feature
-$ git commit -m 'Add feature'
-$ gh pr create -fd
-```
-
-Once you merge a pull request, a new minor release (such as `v0.1.0`) is created.
-
-
-### Stable release
-
-When you want to create a stable release, change the major version in [release workflow](.github/workflows/release.yaml).
+Returning a single property is as simple as:
 
 ```yaml
-      - uses: int128/release-typescript-action@v1
-        with:
-          major-version: 1
+- uses: BrycensRanch/read-properties-action@latest
+  id: version
+  with:
+    file: gradle.properties
+    property: version
+    default: 0.0.1
+
+- run: echo ${{ steps.version.outputs.value }} # Project's version from gradle.properties or 0.0.1 if it is not defined there
 ```
 
-Then a new stable release `v1.0.0` is created.
-
-
-## Specification
-
-To run this action, create a workflow as follows:
+Alternatively, you could return all the values from the `.properties` file by employing the `all` flag:
 
 ```yaml
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: int128/typescript-action@v1
-        with:
-          name: hello
+- uses: BrycensRanch/read-properties-action@latest
+  id: all
+  with:
+    file: gradle.properties
+    all: true
+
+- run: echo ${{ steps.all.outputs.version }} # Project's version from gradle.properties
+- run: echo ${{ steps.all.outputs.groupId }} # Project's groupID from gradle.properties
+  …
 ```
 
-### Inputs
+To see the list of available versions of this action (`latest` in the example above), navigate to the [Releases & Tags](https://github.com/BrycensRanch/read-properties-action/tags) page of this repo.
+Whenever a new version is released, corresponding tags are created / updated.
+`latest` tag always points to the latest release.
+`master` label could also be used, being a synonym to `latest`.
+There are also `$major` and `$major.$minor` tags pointing to the latest matching version (i.e. tag `1` always points to the latest `1.x` version, and tag `1.1` — to the latest `1.1.x` version).
 
-| Name | Default | Description
-|------|----------|------------
-| `name` | (required) | example input
+To see this action… in action… check its integration test in [`test.yml`](.github/workflows/test.yml).
 
+### ERROR: `JAVA_HOME` is set to an invalid directory
 
-### Outputs
+Note, that due to the environment variables "leaking" from the workflow into the Docker container actions, if your workflow defines a `JAVA_HOME` variable, this action would fail.
 
-| Name | Description
-|------|------------
-| `example` | example output
+Try not to set `JAVA_HOME` before running this action until this "leakage" is "fixed" by the GitHub Actions team.
+Which might never happen and be an unpleasant "feature" of GitHub Actions.
 
-
-## Development
-
-### Release workflow
-
-When a pull request is merged into main branch, a new minor release is created by GitHub Actions.
-See https://github.com/int128/release-typescript-action for details.
-
-### Keep consistency of generated files
-
-If a pull request needs to be fixed by Prettier, an additional commit to fix it will be added by GitHub Actions.
-See https://github.com/int128/update-generated-files-action for details.
-
-### Dependency update
-
-You can enable Renovate to update the dependencies.
-This repository is shipped with the config https://github.com/int128/typescript-action-renovate-config.
+Read more about this issue in [#28](https://github.com/BrycensRanch/read-properties-action/issues/28) and check the [minimal reproducible example](https://github.com/madhead/actions-env-leak).

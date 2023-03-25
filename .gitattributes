@@ -1,1 +1,4 @@
-dist/** -diff linguist-generated=true 
+lib/** -diff linguist-generated=true 
+
+# Auto line endings
+* text=auto eol=lf
