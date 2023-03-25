@@ -17,8 +17,7 @@
 	"packageRules": [
 		{
 			"matchDepTypes": ["action"],
-			"labels": ["actions"],
-			"pinDigests": true
+			"labels": ["actions"]
 		}
 	]
 }
