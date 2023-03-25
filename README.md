@@ -39,11 +39,28 @@ There are also `$major` and `$major.$minor` tags pointing to the latest matching
 
 To see this action… in action… check its integration test in [`test.yml`](.github/workflows/test.yml).
 
-### ERROR: `JAVA_HOME` is set to an invalid directory
+## Contributing
 
-Note, that due to the environment variables "leaking" from the workflow into the Docker container actions, if your workflow defines a `JAVA_HOME` variable, this action would fail.
+Contributions are welcome! Please view the [Contributing Guidelines](CONTRIBUTING.md) for more information.
 
-Try not to set `JAVA_HOME` before running this action until this "leakage" is "fixed" by the GitHub Actions team.
-Which might never happen and be an unpleasant "feature" of GitHub Actions.
+## Building
 
-Read more about this issue in [#28](https://github.com/BrycensRanch/read-properties-action/issues/28) and check the [minimal reproducible example](https://github.com/madhead/actions-env-leak).
+Install [Node.js](https://nodejs.org/en/).
+Install [pnpm](https://pnpm.js.org/).
+To build the action, run `pnpm build`.
+To run the tests, run `pnpm test`.
+
+## License
+
+[MIT](LICENSE)
+
+## Acknowledgments
+
+This action is based on [read-java-properties-action](https://github.com/madhead/read-java-properties/)
+However, it has numerous benefits over the original package. For example, it is written in TypeScript, it is tested, and it is published as a GitHub Action automatically.
+Docker is not used, so the action is much faster and it fixes the JAVA_HOME issue the original action had.
+The action is completely rewritten, so it is much more robust and it supports all the features of the original action.
+
+## Changelog
+
+Unlike the original action, this action is semantically versioned and it has a changelog. View it [here](CHANGELOG.md).
