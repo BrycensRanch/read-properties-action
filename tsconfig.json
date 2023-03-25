@@ -42,5 +42,5 @@
 		}
 	},
 	"include": ["./**/*"],
-	"exclude": ["node_modules", "coverage", "lib", "/**/*.test.ts", "/**/*.test.js"]
+	"exclude": ["node_modules", "coverage", "lib"]
 }
