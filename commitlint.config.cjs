@@ -6,7 +6,7 @@ const fs = require("fs"),
 	{ dirname: dirName, basename: baseName } = require("path"),
 	{ lstatSync: fileInfo } = require("fs");
 
-const readdirSync = (p, a = [], ignored = ["node_modules"]) => {
+const readdirSync = (p, a = [], ignored = ["node_modules", "lib", "coverage"]) => {
 		if (fs.statSync(p).isDirectory()) {
 			fs.readdirSync(p)
 				.filter(f => {
@@ -19,8 +19,6 @@ const readdirSync = (p, a = [], ignored = ["node_modules"]) => {
 	},
 	DEFAULT_SCOPES = [
 		"repo",
-		"frontend",
-		"backend",
 		"commitlint",
 		"sec",
 		"security",
@@ -30,9 +28,9 @@ const readdirSync = (p, a = [], ignored = ["node_modules"]) => {
 		"actions",
 		"docker",
 		"config",
-		"swc",
+    "renovate"
 	],
-	blacklistedScopes = ["src", "next", "dist", "out", "lib"],
+	blacklistedScopes = ["src", "next", "dist", "out"],
 	dirNames = readdirSync("./")
 		.map(e => dirName(e))
 		.map(entry => {
