@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: 📥 Monorepo install all deps & pnpm
+        uses: ./.github/actions/pnpm-install
 
       - uses: ./
         id: success
