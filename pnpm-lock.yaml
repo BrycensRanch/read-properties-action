@@ -36,6 +36,7 @@ specifiers:
   prettier: 2.8.7
   properties-file: ^2.2.1
   semantic-release: ^21.0.0
+  semantic-release-major-tag: ^0.3.0
   ts-jest: 29.0.5
   typescript: 5.0.2
 
@@ -77,6 +78,7 @@ devDependencies:
   lint-staged: 13.2.0
   prettier: 2.8.7
   semantic-release: 21.0.0
+  semantic-release-major-tag: 0.3.0
   ts-jest: 29.0.5_kqlgjogqum2lu7fnbgkxhqnnzi
   typescript: 5.0.2
 
@@ -5857,6 +5859,11 @@ packages:
 
   /safer-buffer/2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
+    dev: true
+
+  /semantic-release-major-tag/0.3.0:
+    resolution: {integrity: sha512-OXabIVVVOO4VcAPvTRnUIOOUWvjU75eUHVQUxrd7hrHUpatNie0j/U7Rhh9ThWwu/orbSap5Z+d4vihvo8zZvw==}
+    engines: {node: '>=14'}
     dev: true
 
   /semantic-release/21.0.0:
