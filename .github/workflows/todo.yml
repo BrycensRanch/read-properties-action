@@ -8,6 +8,6 @@ jobs:
     build:
         runs-on: "ubuntu-latest"
         steps:
-            - uses: "actions/checkout@v3"
+            - uses: "actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3" # v3
             - name: "TODO to Issue"
-              uses: "alstr/todo-to-issue-action@v4"
+              uses: "alstr/todo-to-issue-action@2c6872aca33a5e9d8428bb20d2b38564417ae74a" # v4
