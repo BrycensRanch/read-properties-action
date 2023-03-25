@@ -10,21 +10,21 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: ./lib/main.js
+      - uses: ./
         id: success
         with:
           file: test/fixtures/gradle.properties
           property: pluginName
       - run: '[[ "TownyPlus" == "${{ steps.success.outputs.value }}" ]]'
 
-      - uses: ./lib/main.js
+      - uses: ./
         id: default
         with:
           file: test/fixtures/gradle.properties
           property: version
       - run: '[[ "1.1.0-alpha.16" == "${{ steps.default.outputs.value }}" ]]'
 
-      - uses: ./lib/main.js
+      - uses: ./
         id: unexisting-file
         with:
           file: test/fixtures/gradle.properties
@@ -32,7 +32,7 @@ jobs:
           default: Anakin Skywalker
       - run: '[[ "Anakin Skywalker" == "${{ steps.unexisting-file.outputs.value }}" ]]'
 
-      - uses: ./lib/main.js
+      - uses: ./
         id: all
         with:
           file: test/fixtures/gradle.properties
@@ -41,7 +41,7 @@ jobs:
       - run: '[[ "1.16" == "${{ steps.all.outputs.apiVersion }}" ]]'
       - run: '[[ "TownyPlus" == "${{ steps.all.outputs.pluginName }}" ]]'
 
-      - uses: ./lib/main.js
+      - uses: ./
         id: failure
         with:
           file: test/fixtures/da.properties
