@@ -19,7 +19,7 @@
 		[
 			"semantic-release-major-tag",
 			{
-				"customTags": ["v${major}", "v${major}.${minor}"]
+				"customTags": ["v${major}", "v${major}.${minor}", "v{major}.x", "v{major}.{minor}.x"]
 			}
 		],
 		[
