@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/BrycensRanch/read-properties-action/compare/v1.0.0...v1.0.1) (2023-03-25)
+
+
+### Bug Fixes
+
+* publish to github marketplace ([add910c](https://github.com/BrycensRanch/read-properties-action/commit/add910cc49f55d55f7790e7e61cd4a913993701e))
+
 # 1.0.0 (2023-03-25)
 
 
