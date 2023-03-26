@@ -1,4 +1,5 @@
 import * as core from "@actions/core";
+// Do not use fast-glob, it's bundle size is double the size of glob
 import { glob } from "glob";
 import fs from "node:fs";
 import { propertiesToJson as propertiesToObject } from "properties-file";
@@ -11,6 +12,17 @@ type Inputs = {
 };
 
 // Kicking ass and taking names
+
+const setSingleValue = (key: string, value: string): void => {
+	core.debug(`🧪 Setting output ${key} to ${value}`);
+	core.setOutput(key, value);
+
+	// Legacy support for previous GitHub Action
+	// Also for our integration tests that were stolen from the other GitHub Action :dab:
+
+	core.setOutput("value", value);
+	core.debug(`🧓 Setting legacy output value to ${value} (for backwards compatibility)`);
+};
 
 export const run = async (inputs: Inputs): Promise<void> => {
 	core.debug(`Got back file ${inputs.file}`);
@@ -38,6 +50,7 @@ export const run = async (inputs: Inputs): Promise<void> => {
 	core.debug(`🤔 Using properties file ${propertiesFile}`);
 	const properties = propertiesToObject(propertiesFile);
 	if (inputs.all) {
+		core.debug("🧪 Got all as true, setting all properties as outputs");
 		for (const [key, value] of Object.entries(properties)) {
 			core.debug(`🧪 Setting output ${key} to ${value}`);
 			core.setOutput(key, value);
@@ -51,14 +64,14 @@ export const run = async (inputs: Inputs): Promise<void> => {
 	const value = properties[property];
 	if (value) {
 		core.debug(`🧪 Setting output ${property} to ${value}`);
-		core.setOutput(property, value);
+		setSingleValue(property, value);
 		core.info(`🚀 Successfully set property ${property} as output`);
 		return;
 	}
 	const defaultValue = inputs.default;
 	if (defaultValue) {
-		core.debug(`🧪 Setting output ${property} to ${defaultValue} (default)`);
-		core.setOutput(property, defaultValue);
+		core.debug(`🧪 Got a default value ${defaultValue} for property ${property} returning that instead`);
+		setSingleValue(property, defaultValue);
 		core.info(`🚀 Successfully set property ${property} as output`);
 		return;
 	}

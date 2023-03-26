@@ -42,5 +42,5 @@
 		}
 	},
 	"include": ["./**/*"],
-	"exclude": ["node_modules", "coverage", "lib"]
+	"exclude": ["node_modules", "coverage", "lib", "dist"]
 }

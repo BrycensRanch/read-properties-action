@@ -7,14 +7,14 @@ GitHub Action to read values from Java's `.properties` files.
 Returning a single property is as simple as:
 
 ```yaml
-- uses: BrycensRanch/read-properties-action@latest
+- uses: BrycensRanch/read-properties-action@v1
   id: version
   with:
     file: gradle.properties
     property: version
     default: 0.0.1
 
-- run: echo ${{ steps.version.outputs.value }} # Project's version from gradle.properties or 0.0.1 if it is not defined there
+- run: echo ${{ steps.version.outputs.version }} # Project's version from gradle.properties or 0.0.1 if it is not defined there
 ```
 
 Alternatively, you could return all the values from the `.properties` file by employing the `all` flag:
@@ -60,6 +60,7 @@ This action is based on [read-java-properties-action](https://github.com/madhead
 However, it has numerous benefits over the original package. For example, it is written in TypeScript, it is tested, and it is published as a GitHub Action automatically.
 Docker is not used, so the action is much faster and it fixes the JAVA_HOME issue the original action had.
 The action is completely rewritten, so it is much more robust and it supports all the features of the original action.
+By all the features, I also mean it maintains 100% compatibility with the original action.
 
 ## Changelog
 

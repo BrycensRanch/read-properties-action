@@ -57,8 +57,7 @@ jobs:
         run: pnpm check-types
       
       - name: Build Action
-        run: |
-          pnpm build
+        run: pnpm package
 
       - uses: codecov/codecov-action@v3
         name: 💣 Upload coverage to Codecov
