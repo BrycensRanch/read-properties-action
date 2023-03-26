@@ -1,7 +1,6 @@
 {
 	"name": "read-properties-action",
 	"main": "lib/src/main.js",
-	"version": "1.0.0",
 	"private": true,
 	"type": "module",
 	"scripts": {
