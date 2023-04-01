@@ -78,7 +78,7 @@
 			"path": "@commitlint/cz-commitlint"
 		}
 	},
-	"packageManager": "pnpm@7.30.5",
+	"packageManager": "pnpm@8.1.0",
 	"engines": {
 		"node": ">=18",
 		"pnpm": ">=7",
