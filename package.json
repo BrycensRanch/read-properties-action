@@ -47,13 +47,13 @@
 		"@semantic-release/git": "^10.0.1",
 		"@semantic-release/release-notes-generator": "^10.0.3",
 		"@types/jest": "29.5.0",
-		"@types/node": "18.15.10",
-		"@typescript-eslint/eslint-plugin": "5.56.0",
-		"@typescript-eslint/parser": "5.56.0",
+		"@types/node": "18.15.11",
+		"@typescript-eslint/eslint-plugin": "5.57.0",
+		"@typescript-eslint/parser": "5.57.0",
 		"@vercel/ncc": "0.36.1",
 		"babel-jest": "^29.5.0",
 		"commitizen": "^4.3.0",
-		"eslint": "8.36.0",
+		"eslint": "8.37.0",
 		"eslint-config-airbnb-base": "^15.0.0",
 		"eslint-config-airbnb-typescript": "^17.0.0",
 		"eslint-config-airbnb-typescript-prettier": "^5.0.0",
@@ -71,14 +71,14 @@
 		"semantic-release": "^21.0.0",
 		"semantic-release-major-tag": "^0.3.0",
 		"ts-jest": "29.0.5",
-		"typescript": "5.0.2"
+		"typescript": "5.0.3"
 	},
 	"config": {
 		"commitizen": {
 			"path": "@commitlint/cz-commitlint"
 		}
 	},
-	"packageManager": "pnpm@7.30.3",
+	"packageManager": "pnpm@8.1.0",
 	"engines": {
 		"node": ">=18",
 		"pnpm": ">=7",
