@@ -48,6 +48,8 @@ jobs:
 
       - name: 🧪 Run Unit Tests
         uses: ArtiomTr/jest-coverage-report-action@v2
+        with:
+          skip-step: install
 
       - name: 👀 Run Lint Check
         run: pnpm lint-check
