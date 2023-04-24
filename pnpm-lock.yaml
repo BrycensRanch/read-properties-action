@@ -11,8 +11,8 @@ dependencies:
     specifier: ^10.0.0
     version: 10.0.0
   properties-file:
-    specifier: ^2.2.1
-    version: 2.2.1
+    specifier: ^3.0.0
+    version: 3.0.0
 
 devDependencies:
   '@babel/plugin-transform-async-to-generator':
@@ -6603,8 +6603,8 @@ packages:
       react-is: 16.13.1
     dev: true
 
-  /properties-file@2.2.1:
-    resolution: {integrity: sha512-3pk19VpXzX9S2socIheTj/EqBk4K4w1iyHxfJOuZncDaKOSO8XZ6EjcHTpxCNgxWRya2vwLxRpSbjk6It0LEvg==}
+  /properties-file@3.0.0:
+    resolution: {integrity: sha512-mEzVFHhJyb9afsnDRhbdA4n/b+lapj9vCV15xPeN8dTMi0yTH9aU3jBR/nZNVTie/9aRwqYWnLrVGtige3BVvQ==}
     engines: {node: ^14.18.1 || >=16.0.0}
     dev: false
 
