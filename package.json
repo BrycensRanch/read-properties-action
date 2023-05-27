@@ -31,7 +31,7 @@
 		"@actions/core": "1.10.0",
 		"action-input-parser": "^1.2.38",
 		"glob": "^9.3.2",
-		"properties-file": "^2.2.1"
+		"properties-file": "^3.2.4"
 	},
 	"devDependencies": {
 		"@babel/plugin-transform-async-to-generator": "^7.20.7",
