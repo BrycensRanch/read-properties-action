@@ -33,26 +33,11 @@ Alternatively, you could return all the values from the `.properties` file by em
 
 To see the list of available versions of this action (`latest` in the example above), navigate to the [Releases & Tags](https://github.com/BrycensRanch/read-properties-action/tags) page of this repo.
 Whenever a new version is released, corresponding tags are created / updated.
-`latest` tag always points to the latest release.
+`latest` tag always points to the latest stable release.
 `master` label could also be used, being a synonym to `latest`.
 There are also `$major` and `$major.$minor` tags pointing to the latest matching version (i.e. tag `1` always points to the latest `1.x` version, and tag `1.1` — to the latest `1.1.x` version).
 
 To see this action… in action… check its integration test in [`test.yml`](.github/workflows/test.yml).
-
-## Contributing
-
-Contributions are welcome! Please view the [Contributing Guidelines](CONTRIBUTING.md) for more information.
-
-## Building
-
-Install [Node.js](https://nodejs.org/en/).
-Install [pnpm](https://pnpm.js.org/).
-To build the action, run `pnpm build`.
-To run the tests, run `pnpm test`.
-
-## License
-
-[MIT](LICENSE)
 
 ## Acknowledgments
 
@@ -65,3 +50,29 @@ By all the features, I also mean it maintains 100% compatibility with the origin
 ## Changelog
 
 Unlike the original action, this action is semantically versioned and it has a changelog. View it [here](CHANGELOG.md).
+
+## Contributing
+
+Contributions are welcome! Please view the [Contributing Guidelines](CONTRIBUTING.md) for more information.
+
+## Building
+
+Install [Git](https://git-scm.com/).
+Install [Node.js LTS (Hydrogen, 18)](https://nodejs.org/en/).
+Install [pnpm](https://pnpm.js.org/).
+
+Clone the repository by running `git clone https://github.com/BrycensRanch/read-properties-action.git`.
+
+If you're aiming to contribute, please clone the `next` branch instead using the `-b next` flag and read our [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Enter the repository by running `cd read-properties-action`.
+
+### Commands
+
+Install the project's dependencies by running `pnpm install`.
+To build the action, run `pnpm build`.
+To run tests, run `pnpm test`.
+
+## License
+
+[MIT](LICENSE)
