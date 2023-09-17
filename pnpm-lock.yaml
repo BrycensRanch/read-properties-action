@@ -8,6 +8,9 @@ dependencies:
   '@actions/core':
     specifier: 1.10.1
     version: 1.10.1
+  '@pnpm/merge-lockfile-changes':
+    specifier: ^5.0.3
+    version: 5.0.3
   action-input-parser:
     specifier: ^1.2.38
     version: 1.2.38
@@ -2059,6 +2062,23 @@ packages:
     engines: {node: '>=12.22.0'}
     dev: true
 
+  /@pnpm/lockfile-types@5.1.1:
+    resolution: {integrity: sha512-QswQGFENlosERR2rCxp/0MhyOwBsRyfDvngTOmn8QG2IPd3KsCJFUNFnLddAp13L+9bxcTgijYIuyN2MlShoFw==}
+    engines: {node: '>=16.14'}
+    dependencies:
+      '@pnpm/types': 9.2.0
+    dev: false
+
+  /@pnpm/merge-lockfile-changes@5.0.3:
+    resolution: {integrity: sha512-RmWcpl7wWDx17upkxPfGorpLr85FbyihZoi2naoc04nocawKkVVeI68PDWFkgEmImuoQgHZaFCgAVgTbwJyb9A==}
+    engines: {node: '>=16.14'}
+    dependencies:
+      '@pnpm/lockfile-types': 5.1.1
+      comver-to-semver: 1.0.0
+      ramda: /@pnpm/ramda@0.28.1
+      semver: 7.5.4
+    dev: false
+
   /@pnpm/network.ca-file@1.0.2:
     resolution: {integrity: sha512-YcPQ8a0jwYU9bTdJDpXjMi7Brhkr1mXsXrUJvjqM2mQDgkRiz8jFaQGOdaLxgjtUfQgZhKy/O3cG/YwmgKaxLA==}
     engines: {node: '>=12.22.0'}
@@ -2074,6 +2094,15 @@ packages:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
     dev: true
+
+  /@pnpm/ramda@0.28.1:
+    resolution: {integrity: sha512-zcAG+lvU0fMziNeGXpPyCyCJYp5ZVrPElEE4t14jAmViaihohocZ+dDkcRIyAomox8pQsuZnv1EyHR+pOhmUWw==}
+    dev: false
+
+  /@pnpm/types@9.2.0:
+    resolution: {integrity: sha512-LtkHgtJ5Bjny4poUWyMhOKHc822/zm8NhPx+7VbopfDYnTrKgJwTyTbZjZEyN5KpDw3R1Fr8VYdmv5gn4eyWbw==}
+    engines: {node: '>=16.14'}
+    dev: false
 
   /@semantic-release/changelog@6.0.3(semantic-release@22.0.0):
     resolution: {integrity: sha512-dZuR5qByyfe3Y03TpmCvAxCyTnp7r5XwtHRf/8vD9EAn4ZWbavUX8adMtXYzE86EVh0gyLA7lm5yW4IV30XUag==}
@@ -3379,6 +3408,11 @@ packages:
       array-ify: 1.0.0
       dot-prop: 5.3.0
     dev: true
+
+  /comver-to-semver@1.0.0:
+    resolution: {integrity: sha512-gcGtbRxjwROQOdXLUWH1fQAXqThUVRZ219aAwgtX3KfYw429/Zv6EIJRf5TBSzWdAGwePmqH7w70WTaX4MDqag==}
+    engines: {node: '>=12.17'}
+    dev: false
 
   /concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
@@ -6396,7 +6430,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
-    dev: true
 
   /make-dir@4.0.0:
     resolution: {integrity: sha512-hXdUTZYIVOt1Ex//jAQi+wTZZpUpwBj/0QsOzqegb3rGMMeJiSEu5xLHnYfBrRV4RH2+OCSOO95Is/7x1WJ4bw==}
@@ -7557,7 +7590,6 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
-    dev: true
 
   /set-function-name@2.0.1:
     resolution: {integrity: sha512-tMNCiqYVkXIZgc2Hnoy2IvC/f8ezc5koaRFkCjrpWzGpCd3qbZXPzVy9MAZzK1ch/X0jvSkojys3oqJN0qCmdA==}
@@ -8423,7 +8455,6 @@ packages:
 
   /yallist@4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
-    dev: true
 
   /yaml@2.3.1:
     resolution: {integrity: sha512-2eHWfjaoXgTBC2jNM1LRef62VQa0umtvRiDSk6HSzW7RvS5YtkabJrwYLLEKWBc8a5U2PTSCs+dJjUTJdlHsWQ==}
