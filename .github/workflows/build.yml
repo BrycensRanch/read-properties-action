@@ -37,6 +37,8 @@ jobs:
 
       # see https://github.com/vercel/next.js/pull/27362
       - name: Restore build from cache
+        # Only restore cache if it isn't a pull request
+        if: github.event_name != 'pull_request'
         uses: actions/cache@v3
         with:
           path: |
