@@ -1,8 +1,9 @@
 import * as core from "@actions/core";
 // Do not use fast-glob, it's bundle size is double the size of glob
+import { readFile } from "fs/promises";
 import { glob } from "glob";
 import fs from "node:fs";
-import { propertiesToJson as propertiesToObject } from "properties-file";
+import { getProperties as propertiesToObject } from "properties-file";
 
 type Inputs = {
 	file: string;
@@ -48,7 +49,9 @@ export const run = async (inputs: Inputs): Promise<void> => {
 
 	const propertiesFile = propertiesFiles[0];
 	core.debug(`🤔 Using properties file ${propertiesFile}`);
-	const properties = propertiesToObject(propertiesFile);
+	const content = await readFile(propertiesFile, "utf8"),
+		// TODO: Make this less ugly because TypeScript loves to be difficult
+		properties = propertiesToObject(content);
 	if (inputs.all) {
 		core.debug("🧪 Got all as true, setting all properties as outputs");
 		for (const [key, value] of Object.entries(properties)) {
@@ -61,7 +64,11 @@ export const run = async (inputs: Inputs): Promise<void> => {
 	const { property } = inputs;
 	if (!property) throw new Error("Property is not defined");
 
+	// Why am I forced to do all of this. Why is life hard. Why
+	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+	// @ts-ignore Recommended approach for this problem..? https://www.typescriptlang.org/tsconfig#suppressImplicitAnyIndexErrors
 	const value = properties[property];
+
 	if (value) {
 		core.debug(`🧪 Setting output ${property} to ${value}`);
 		setSingleValue(property, value);
