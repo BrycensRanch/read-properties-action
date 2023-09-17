@@ -8,13 +8,15 @@ Please note, this guide is more conceptual and meant to be universal for whateve
 
 The project structure in this repository may look daunting at a glance, however, it's to try and give maintainers a better experience.
 
-1. The folder `src` contains the project's source code
-2. The folder `tests` contains all of the project's Jest tests & their appropriate fixtures.
-3. The folder `scripts` does not contain any too important to the project. Just used for Gitpod, which I doubt many contributors would be interested in.
+1. `src` contains the project's source code
+2. `tests` contains all of the project's Jest tests & their appropriate fixtures.
+3. `scripts` does not contain any too important to the project. Just used for Gitpod, which I doubt many contributors would be interested in.
 
 ### Files & Configurations
 
 This project uses Husky & Commitlint & Lint-staged to provide developers with a safety net on their own machine.
+
+**IMPORTANT**: One feature *per* PR. One bug fix *per* PR. One refactor *per* PR.
 
 These all integrate into ESLint, Jest, and Prettier.
 
