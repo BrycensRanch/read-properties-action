@@ -64,5 +64,6 @@ module.exports = {
 	rules: {
 		"scope-enum": [2, "always", scopes],
     "body-max-length": [0, "always", Infinity],
+    "body-max-line-length": [0, "always", Infinity],
 	},
 };
