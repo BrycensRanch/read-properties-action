@@ -22,5 +22,6 @@ branding:
   icon: 'file-text'
 
 runs:
+  # Node16 is EOL. We now use Node20! Cool, right?
   using: 'node20'
   main: 'dist/index.js'
