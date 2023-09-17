@@ -42,5 +42,15 @@
 		}
 	},
 	"include": ["./**/*"],
-	"exclude": ["node_modules", "coverage", "lib", "dist"]
+	"exclude": [
+		"node_modules",
+		"coverage",
+		"lib",
+		"dist",
+		"tests",
+		"**/*.config.js",
+		"**/*.config.cjs",
+		"**/*.config.cts",
+		"**/*.config.ts"
+	]
 }

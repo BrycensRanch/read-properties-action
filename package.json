@@ -6,6 +6,7 @@
 	"scripts": {
 		"prepare": "husky install",
 		"build": "tsc",
+		"clean": "rimraf lib dist coverage",
 		"check-types": "tsc --noEmit --pretty",
 		"format": "prettier --write **/*.ts",
 		"format-check": "prettier --check **/*.ts",
@@ -68,6 +69,7 @@
 		"jest-ts-webcompat-resolver": "^1.0.0",
 		"lint-staged": "^14.0.0",
 		"prettier": "2.8.8",
+		"rimraf": "^5.0.1",
 		"semantic-release": "^22.0.0",
 		"semantic-release-major-tag": "^0.3.0",
 		"ts-jest": "29.1.0",

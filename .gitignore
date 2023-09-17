@@ -92,8 +92,12 @@ typings/
 
 # Built TypeScript files for Jest, does not need to be commited
 # The action is "packaged" in a way where this folder is not needed
-**/lib
-lib
+# EDIT: I'm actually not sure, lol! 
+# **/lib
+# lib
+
+# Massive output file that shouldn't have been included in the first place
+build-stats.json
 
 # OS metadata
 .DS_Store
