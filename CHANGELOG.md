@@ -5,6 +5,13 @@
 
 * use node20 instead of eol node16 ([72101c1](https://github.com/BrycensRanch/read-properties-action/commit/72101c1c4dd988b0507a7c2886369e01ce0e48fb))
 
+## [1.0.3-next.1](https://github.com/BrycensRanch/read-properties-action/compare/v1.0.2...v1.0.3-next.1) (2023-09-20)
+
+
+### Bug Fixes
+
+* use node20 instead of eol node16 ([72101c1](https://github.com/BrycensRanch/read-properties-action/commit/72101c1c4dd988b0507a7c2886369e01ce0e48fb))
+
 ## [1.0.3-next.1](https://github.com/BrycensRanch/read-properties-action/compare/v1.0.2...v1.0.3-next.1) (2023-09-18)
 
 
