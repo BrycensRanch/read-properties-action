@@ -58,7 +58,7 @@ Contributions are welcome! Please view the [Contributing Guidelines](CONTRIBUTIN
 ## Building
 
 Install [Git](https://git-scm.com/).
-Install [Node.js LTS (Hydrogen, 18)](https://nodejs.org/en/).
+Install [Node.js LTS (Iron, 20)](https://nodejs.org/en/).
 Install [pnpm](https://pnpm.js.org/).
 
 Clone the repository by running `git clone https://github.com/BrycensRanch/read-properties-action.git`.
