@@ -84,8 +84,8 @@
 	},
 	"packageManager": "pnpm@8.10.2",
 	"engines": {
-		"node": ">=18",
-		"pnpm": ">=7",
-		"npm": ">=8.5.0"
+		"node": ">=20",
+		"pnpm": ">=8",
+		"npm": ">=9"
 	}
 }
