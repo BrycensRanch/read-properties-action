@@ -49,7 +49,7 @@ jobs:
             ${{ runner.os }}-action-${{ hashFiles('**/pnpm.lock') }}-
 
       - name: 🧪 Run Unit Tests
-        with: pnpm test
+        run: pnpm test
 
       - name: 👀 Run Lint Check
         run: pnpm lint-check
