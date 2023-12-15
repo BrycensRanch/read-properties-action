@@ -69,7 +69,7 @@ jobs:
           fail_ci_if_error: true # optional (default = false)
           verbose: false # optional (default = false)
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: build
