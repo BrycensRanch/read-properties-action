@@ -39,7 +39,7 @@ jobs:
       - name: Restore build from cache
         # Only restore cache if it isn't a pull request
         if: github.event_name != 'pull_request'
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: |
             ~/.cache
