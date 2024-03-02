@@ -19,7 +19,7 @@ dependencies:
     version: 10.3.10
   properties-file:
     specifier: ^3.3.7
-    version: 3.3.19
+    version: 3.4.0
 
 devDependencies:
   '@babel/plugin-transform-async-to-generator':
@@ -171,6 +171,14 @@ packages:
       '@jridgewell/trace-mapping': 0.3.19
     dev: true
 
+  /@ampproject/remapping@2.3.0:
+    resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
+    engines: {node: '>=6.0.0'}
+    dependencies:
+      '@jridgewell/gen-mapping': 0.3.5
+      '@jridgewell/trace-mapping': 0.3.24
+    dev: true
+
   /@babel/code-frame@7.23.5:
     resolution: {integrity: sha512-CgH3s1a96LipHCmSUmYFPwY7MNx8C3avkq7i4Wl3cfa662ldtUe4VM1TPXX70pfmrlWTb6jLqTYrZyT2ZTJBgA==}
     engines: {node: '>=6.9.0'}
@@ -211,7 +219,7 @@ packages:
     resolution: {integrity: sha512-fQfkg0Gjkza3nf0c7/w6Xf34BW4YvzNfACRLmmb7XRLa6XHdR+K9AlJlxneFfWYf6uhOzuzZVTjF/8KfndZANw==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@ampproject/remapping': 2.2.1
+      '@ampproject/remapping': 2.3.0
       '@babel/code-frame': 7.23.5
       '@babel/generator': 7.23.6
       '@babel/helper-compilation-targets': 7.23.6
@@ -245,7 +253,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/types': 7.24.0
-      '@jridgewell/gen-mapping': 0.3.4
+      '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.24
       jsesc: 2.5.2
     dev: true
@@ -2252,8 +2260,8 @@ packages:
       '@jridgewell/trace-mapping': 0.3.19
     dev: true
 
-  /@jridgewell/gen-mapping@0.3.4:
-    resolution: {integrity: sha512-Oud2QPM5dHviZNn4y/WhhYKSXksv+1xLEIsNrAbGcFzUN3ubqWRFT5gwPchNc5NuzILOU4tPBDTZ4VwhL8Y7cw==}
+  /@jridgewell/gen-mapping@0.3.5:
+    resolution: {integrity: sha512-IzL8ZoEDIBRWEzlCcRhOaCupYyN5gdIK+Q6fbFdPDg6HqX6jpkItn7DFIpW9LQzXG6Df9sA7+OKnq0qlz/GaQg==}
     engines: {node: '>=6.0.0'}
     dependencies:
       '@jridgewell/set-array': 1.2.1
@@ -7738,8 +7746,8 @@ packages:
       react-is: 16.13.1
     dev: true
 
-  /properties-file@3.3.19:
-    resolution: {integrity: sha512-uf/7kOHqAdFhiQci73tcqFK2iu6d50OurDZyoP26Hs9bR8saYxdyIlLkC/FUjyI4626EHKBUaxviho//R9lOeg==}
+  /properties-file@3.4.0:
+    resolution: {integrity: sha512-V1MpTLOp8Wat47iLoLZMM0t9EAFyNhiY1gVif5PsX3NayYZi7VaOYkHtf29F7Spcl3NrCs6WAeazBwiY8gMGcg==}
     dev: false
 
   /proto-list@1.2.4:
