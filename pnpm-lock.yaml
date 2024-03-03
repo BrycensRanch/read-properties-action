@@ -19,7 +19,7 @@ dependencies:
     version: 10.3.10
   properties-file:
     specifier: ^3.3.7
-    version: 3.4.0
+    version: 3.4.1
 
 devDependencies:
   '@babel/plugin-transform-async-to-generator':
@@ -176,7 +176,7 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       '@jridgewell/gen-mapping': 0.3.5
-      '@jridgewell/trace-mapping': 0.3.24
+      '@jridgewell/trace-mapping': 0.3.25
     dev: true
 
   /@babel/code-frame@7.23.5:
@@ -254,7 +254,7 @@ packages:
     dependencies:
       '@babel/types': 7.24.0
       '@jridgewell/gen-mapping': 0.3.5
-      '@jridgewell/trace-mapping': 0.3.24
+      '@jridgewell/trace-mapping': 0.3.25
       jsesc: 2.5.2
     dev: true
 
@@ -2201,7 +2201,7 @@ packages:
     dependencies:
       '@jridgewell/set-array': 1.2.1
       '@jridgewell/sourcemap-codec': 1.4.15
-      '@jridgewell/trace-mapping': 0.3.24
+      '@jridgewell/trace-mapping': 0.3.25
     dev: true
 
   /@jridgewell/resolve-uri@3.1.2:
@@ -2237,8 +2237,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@jridgewell/trace-mapping@0.3.24:
-    resolution: {integrity: sha512-+VaWXDa6+l6MhflBvVXjIEAzb59nQ2JUK3bwRp2zRpPtU+8TFRy9Gg/5oIcNlkEL5PGlBFGfemUVvIgLnTzq7Q==}
+  /@jridgewell/trace-mapping@0.3.25:
+    resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
@@ -7607,8 +7607,8 @@ packages:
       react-is: 16.13.1
     dev: true
 
-  /properties-file@3.4.0:
-    resolution: {integrity: sha512-V1MpTLOp8Wat47iLoLZMM0t9EAFyNhiY1gVif5PsX3NayYZi7VaOYkHtf29F7Spcl3NrCs6WAeazBwiY8gMGcg==}
+  /properties-file@3.4.1:
+    resolution: {integrity: sha512-0mBRvQCK8R02qu/EkBFw//OmVk8TX90NvM9PdAUQYK1I4khUsLaaKPnL/16HKRDOUxUeUjmqzgrqfvuiHK1WXQ==}
     dev: false
 
   /proto-list@1.2.4:
