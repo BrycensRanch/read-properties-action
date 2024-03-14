@@ -19,7 +19,7 @@ dependencies:
     version: 10.3.10
   properties-file:
     specifier: ^3.3.7
-    version: 3.5.1
+    version: 3.5.2
 
 devDependencies:
   '@babel/plugin-transform-async-to-generator':
@@ -42,7 +42,7 @@ devDependencies:
     version: 19.1.0
   '@commitlint/cz-commitlint':
     specifier: ^19.0.0
-    version: 19.1.0(@types/node@20.11.27)(commitizen@4.3.0)(inquirer@9.2.15)(typescript@5.4.2)
+    version: 19.1.0(@types/node@20.11.27)(commitizen@4.3.0)(inquirer@9.2.16)(typescript@5.4.2)
   '@jest/globals':
     specifier: ^29.7.0
     version: 29.7.0
@@ -1728,7 +1728,7 @@ packages:
       ajv: 8.12.0
     dev: true
 
-  /@commitlint/cz-commitlint@19.1.0(@types/node@20.11.27)(commitizen@4.3.0)(inquirer@9.2.15)(typescript@5.4.2):
+  /@commitlint/cz-commitlint@19.1.0(@types/node@20.11.27)(commitizen@4.3.0)(inquirer@9.2.16)(typescript@5.4.2):
     resolution: {integrity: sha512-ABbOmQbckCjBv1xkcsPVNMWikcdMXY3QF491xut1zar+K9Fj5XjUfAvDeJMe/wBigs+6lu8vymnLzLUNwbMDPQ==}
     engines: {node: '>=v18'}
     peerDependencies:
@@ -1740,7 +1740,7 @@ packages:
       '@commitlint/types': 19.0.3
       chalk: 5.3.0
       commitizen: 4.3.0(@types/node@20.11.27)(typescript@5.4.2)
-      inquirer: 9.2.15
+      inquirer: 9.2.16
       lodash.isplainobject: 4.0.6
       word-wrap: 1.2.5
     transitivePeerDependencies:
@@ -5716,8 +5716,8 @@ packages:
       wrap-ansi: 7.0.0
     dev: true
 
-  /inquirer@9.2.15:
-    resolution: {integrity: sha512-vI2w4zl/mDluHt9YEQ/543VTCwPKWiHzKtm9dM2V0NdFcqEexDAjUHzO1oA60HRNaVifGXXM1tRRNluLVHa0Kg==}
+  /inquirer@9.2.16:
+    resolution: {integrity: sha512-qzgbB+yNjgSzk2omeqMDtO9IgJet/UL67luT1MaaggRpGK73DBQct5Q4pipwFQcIKK1GbMODYd4UfsRCkSP1DA==}
     engines: {node: '>=18'}
     dependencies:
       '@ljharb/through': 2.3.13
@@ -7612,8 +7612,8 @@ packages:
       react-is: 16.13.1
     dev: true
 
-  /properties-file@3.5.1:
-    resolution: {integrity: sha512-6RcjdvecQmiMHW8VFwCJvulSL2lRysTAv2NCGy4VgNJvM+u4R8QKwvnlKYTe4yHq0BTeuRQTUeulCyMpOCMG3Q==}
+  /properties-file@3.5.2:
+    resolution: {integrity: sha512-VnukzubKzUwy1fC0S43T6JbIsiyJVhxiTL1t2JQUn8XzL9L+SwcK5TDBhzEJFRVf8iTeHe6GHt89FOxZxqNdVw==}
     dev: false
 
   /proto-list@1.2.4:
