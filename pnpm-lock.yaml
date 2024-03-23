@@ -19,7 +19,7 @@ dependencies:
     version: 10.3.10
   properties-file:
     specifier: ^3.3.7
-    version: 3.5.2
+    version: 3.5.3
 
 devDependencies:
   '@babel/plugin-transform-async-to-generator':
@@ -4264,11 +4264,11 @@ packages:
       safe-regex-test: 1.0.3
       string.prototype.trim: 1.2.9
       string.prototype.trimend: 1.0.8
-      string.prototype.trimstart: 1.0.7
+      string.prototype.trimstart: 1.0.8
       typed-array-buffer: 1.0.2
       typed-array-byte-length: 1.0.1
       typed-array-byte-offset: 1.0.2
-      typed-array-length: 1.0.5
+      typed-array-length: 1.0.6
       unbox-primitive: 1.0.2
       which-typed-array: 1.1.15
     dev: true
@@ -7632,8 +7632,8 @@ packages:
       react-is: 16.13.1
     dev: true
 
-  /properties-file@3.5.2:
-    resolution: {integrity: sha512-VnukzubKzUwy1fC0S43T6JbIsiyJVhxiTL1t2JQUn8XzL9L+SwcK5TDBhzEJFRVf8iTeHe6GHt89FOxZxqNdVw==}
+  /properties-file@3.5.3:
+    resolution: {integrity: sha512-T1LY+JkGGxSf6UsEmGA01u787OvPrtiw5fplYLoR7SfjPUo6IsiJ9K/U6xpLoiPXhmzeHHCrIhHjWe/9QCAilw==}
     dev: false
 
   /proto-list@1.2.4:
@@ -8363,6 +8363,15 @@ packages:
       es-abstract: 1.22.2
     dev: true
 
+  /string.prototype.trimstart@1.0.8:
+    resolution: {integrity: sha512-UXSH262CSZY1tfu3G3Secr6uGLCFVPMhIqHjlgCUtCCcgihYc/xKs9djMTMUOb2j1mVSeU8EU6NWc/iQKU6Gfg==}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      call-bind: 1.0.7
+      define-properties: 1.2.1
+      es-object-atoms: 1.0.0
+    dev: true
+
   /string_decoder@1.1.1:
     resolution: {integrity: sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg==}
     dependencies:
@@ -8799,8 +8808,8 @@ packages:
       is-typed-array: 1.1.12
     dev: true
 
-  /typed-array-length@1.0.5:
-    resolution: {integrity: sha512-yMi0PlwuznKHxKmcpoOdeLwxBoVPkqZxd7q2FgMkmD3bNwvF5VW0+UlUQ1k1vmktTu4Yu13Q0RIxEP8+B+wloA==}
+  /typed-array-length@1.0.6:
+    resolution: {integrity: sha512-/OxDN6OtAk5KBpGb28T+HZc2M+ADtvRxXrKKbUwtsLgdoxgX13hyy7ek6bFRl5+aBs2yZzB0c4CnQfAtVypW/g==}
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.7
