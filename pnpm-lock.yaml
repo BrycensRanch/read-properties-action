@@ -12,8 +12,8 @@ importers:
         specifier: 1.10.1
         version: 1.10.1
       '@pnpm/merge-lockfile-changes':
-        specifier: ^5.0.5
-        version: 5.0.7
+        specifier: ^6.0.0
+        version: 6.0.1
       action-input-parser:
         specifier: ^1.2.38
         version: 1.2.38
@@ -1106,13 +1106,13 @@ packages:
     resolution: {integrity: sha512-htyl8TWnKL7K/ESFa1oW2UB5lVDxuF5DpM7tBi6Hu2LNL3mWkIzNLG6N4zoCUP1lCKNxWy/3iu8mS8MvToGd6w==}
     engines: {node: '>=12.22.0'}
 
-  '@pnpm/lockfile-types@5.1.5':
-    resolution: {integrity: sha512-02FP0HynzX+2DcuPtuMy7PH+kLIC0pevAydAOK+zug2bwdlSLErlvSkc+4+3dw60eRWgUXUqyfO2eR/Ansdbng==}
-    engines: {node: '>=16.14'}
+  '@pnpm/lockfile-types@7.0.0':
+    resolution: {integrity: sha512-reJdn+BIDBQ2pNDPZN6ihluyzGmtIHeJtQek9iWmL4QiAPSz1Gy/9SrVEloAo3MVMmYA0rJdljs6HvntmhUq+g==}
+    engines: {node: '>=18.12'}
 
-  '@pnpm/merge-lockfile-changes@5.0.7':
-    resolution: {integrity: sha512-fYmX1+EHv3wg7l4A9FCEkjgEBIHaY6JosknkLk3pL8dbB9k6unjIrF9f2onNtpj3XUlWxZ3aBw9THk/Bf6hKow==}
-    engines: {node: '>=16.14'}
+  '@pnpm/merge-lockfile-changes@6.0.1':
+    resolution: {integrity: sha512-mDeMSon2vPkZW9I8sNiI1nFkc23ehngh36ahbJ818sNJs8VFKH2wndtYn+eg1NII/yhlwI1hStP1W5xjchpfWg==}
+    engines: {node: '>=18.12'}
 
   '@pnpm/network.ca-file@1.0.2':
     resolution: {integrity: sha512-YcPQ8a0jwYU9bTdJDpXjMi7Brhkr1mXsXrUJvjqM2mQDgkRiz8jFaQGOdaLxgjtUfQgZhKy/O3cG/YwmgKaxLA==}
@@ -1125,9 +1125,9 @@ packages:
   '@pnpm/ramda@0.28.1':
     resolution: {integrity: sha512-zcAG+lvU0fMziNeGXpPyCyCJYp5ZVrPElEE4t14jAmViaihohocZ+dDkcRIyAomox8pQsuZnv1EyHR+pOhmUWw==}
 
-  '@pnpm/types@9.4.2':
-    resolution: {integrity: sha512-g1hcF8Nv4gd76POilz9gD4LITAPXOe5nX4ijgr8ixCbLQZfcpYiMfJ+C1RlMNRUDo8vhlNB4O3bUlxmT6EAQXA==}
-    engines: {node: '>=16.14'}
+  '@pnpm/types@10.1.0':
+    resolution: {integrity: sha512-cM2UhtQJs06zWm3wsXoVVi4b1P8rA7xioZCct/Q4sR5GAUq0VUReZMd9TkPEVdNlAiitctTAi9EM8D5hrO937A==}
+    engines: {node: '>=18.12'}
 
   '@sec-ant/readable-stream@0.4.1':
     resolution: {integrity: sha512-831qok9r2t8AlxLko40y2ebgSDhenenCatLVeW/uBtnHPyhHOvG0C7TvfgecV+wHzIm5KUICgzmVpWS+IMEAeg==}
@@ -5949,16 +5949,17 @@ snapshots:
 
   '@pnpm/config.env-replace@1.1.0': {}
 
-  '@pnpm/lockfile-types@5.1.5':
+  '@pnpm/lockfile-types@7.0.0':
     dependencies:
-      '@pnpm/types': 9.4.2
+      '@pnpm/types': 10.1.0
 
-  '@pnpm/merge-lockfile-changes@5.0.7':
+  '@pnpm/merge-lockfile-changes@6.0.1':
     dependencies:
-      '@pnpm/lockfile-types': 5.1.5
+      '@pnpm/lockfile-types': 7.0.0
+      '@pnpm/types': 10.1.0
       comver-to-semver: 1.0.0
       ramda: '@pnpm/ramda@0.28.1'
-      semver: 7.6.0
+      semver: 7.6.2
 
   '@pnpm/network.ca-file@1.0.2':
     dependencies:
@@ -5972,7 +5973,7 @@ snapshots:
 
   '@pnpm/ramda@0.28.1': {}
 
-  '@pnpm/types@9.4.2': {}
+  '@pnpm/types@10.1.0': {}
 
   '@sec-ant/readable-stream@0.4.1': {}
 
