@@ -28,7 +28,9 @@ const readdirSync = (p, a = [], ignored = ["node_modules", "lib", "coverage", ".
 		"actions",
 		"docker",
 		"config",
-    "renovate"
+		"renovate",
+		"dev",
+		"config",
 	],
 	blacklistedScopes = ["src", "next", "dist", "out"],
 	dirNames = readdirSync("./")
@@ -63,7 +65,7 @@ module.exports = {
 	extends: ["@commitlint/config-conventional"],
 	rules: {
 		"scope-enum": [2, "always", scopes],
-    "body-max-length": [0, "always", Infinity],
-    "body-max-line-length": [0, "always", Infinity],
+		"body-max-length": [0, "always", Infinity],
+		"body-max-line-length": [0, "always", Infinity],
 	},
 };
