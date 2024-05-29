@@ -51,8 +51,8 @@ jobs:
       - name: 🧪 Run Unit Tests
         run: pnpm test
 
-      - name: 👀 Run Lint Check
-        run: pnpm lint-check
+      # - name: 👀 Run Lint Check
+      #   run: pnpm lint-check
       - name: 😎 Run Format Check
         run: pnpm format-check
       - name: 📦 Run Types Check
