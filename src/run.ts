@@ -65,7 +65,7 @@ export const run = async (inputs: Inputs): Promise<void> => {
 	if (!property) throw new Error("Property is not defined");
 
 	// Why am I forced to do all of this. Why is life hard. Why
-	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+
 	// @ts-ignore Recommended approach for this problem..? https://www.typescriptlang.org/tsconfig#suppressImplicitAnyIndexErrors
 	const value = properties[property];
 
