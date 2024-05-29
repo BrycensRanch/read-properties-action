@@ -1,3 +1,10 @@
+## [1.0.3-next.2](https://github.com/BrycensRanch/read-properties-action/compare/v1.0.3-next.1...v1.0.3-next.2) (2024-05-29)
+
+
+### Bug Fixes
+
+* recompile action with node 20 ([9f619e7](https://github.com/BrycensRanch/read-properties-action/commit/9f619e7e61550465c783eacc7b2bf6fc43928453))
+
 ## [1.0.3-next.1](https://github.com/BrycensRanch/read-properties-action/compare/v1.0.2...v1.0.3-next.1) (2023-09-20)
 
 
