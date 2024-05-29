@@ -47,6 +47,7 @@
 		"lib",
 		"dist",
 		"tests",
+		"**/*.d.ts",
 		"**/*.config.js",
 		"**/*.config.cjs",
 		"**/*.config.cts",
