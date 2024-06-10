@@ -13,7 +13,7 @@ importers:
         version: 1.10.1
       '@pnpm/merge-lockfile-changes':
         specifier: ^6.0.1
-        version: 6.0.1
+        version: 6.0.2
       action-input-parser:
         specifier: ^1.2.38
         version: 1.2.38
@@ -1127,12 +1127,12 @@ packages:
     resolution: {integrity: sha512-htyl8TWnKL7K/ESFa1oW2UB5lVDxuF5DpM7tBi6Hu2LNL3mWkIzNLG6N4zoCUP1lCKNxWy/3iu8mS8MvToGd6w==}
     engines: {node: '>=12.22.0'}
 
-  '@pnpm/lockfile-types@7.0.0':
-    resolution: {integrity: sha512-reJdn+BIDBQ2pNDPZN6ihluyzGmtIHeJtQek9iWmL4QiAPSz1Gy/9SrVEloAo3MVMmYA0rJdljs6HvntmhUq+g==}
+  '@pnpm/lockfile-types@7.1.0':
+    resolution: {integrity: sha512-QO+FlNjDiBt+u5esPhvq1d0uv89KCAmlLBkhj/6cQZa7Uq/a/jfRdNGJCthrrEnerwTKipPTNgyuctQE8vQK+Q==}
     engines: {node: '>=18.12'}
 
-  '@pnpm/merge-lockfile-changes@6.0.1':
-    resolution: {integrity: sha512-mDeMSon2vPkZW9I8sNiI1nFkc23ehngh36ahbJ818sNJs8VFKH2wndtYn+eg1NII/yhlwI1hStP1W5xjchpfWg==}
+  '@pnpm/merge-lockfile-changes@6.0.2':
+    resolution: {integrity: sha512-n3H9sjnq8heswl1Eiog9NifA7DhuBbuBXsTFhpG3wPw5ROSzdllbG79zewxE/GakHH30o4hiT7W4cwo0zkMIcA==}
     engines: {node: '>=18.12'}
 
   '@pnpm/network.ca-file@1.0.2':
@@ -5884,13 +5884,13 @@ snapshots:
 
   '@pnpm/config.env-replace@1.1.0': {}
 
-  '@pnpm/lockfile-types@7.0.0':
+  '@pnpm/lockfile-types@7.1.0':
     dependencies:
       '@pnpm/types': 10.1.0
 
-  '@pnpm/merge-lockfile-changes@6.0.1':
+  '@pnpm/merge-lockfile-changes@6.0.2':
     dependencies:
-      '@pnpm/lockfile-types': 7.0.0
+      '@pnpm/lockfile-types': 7.1.0
       '@pnpm/types': 10.1.0
       comver-to-semver: 1.0.0
       ramda: '@pnpm/ramda@0.28.1'
