@@ -13,7 +13,7 @@ importers:
         version: 1.10.1
       '@pnpm/merge-lockfile-changes':
         specifier: ^6.0.1
-        version: 6.0.3
+        version: 6.0.4
       action-input-parser:
         specifier: ^1.2.38
         version: 1.2.38
@@ -1123,12 +1123,12 @@ packages:
     resolution: {integrity: sha512-htyl8TWnKL7K/ESFa1oW2UB5lVDxuF5DpM7tBi6Hu2LNL3mWkIzNLG6N4zoCUP1lCKNxWy/3iu8mS8MvToGd6w==}
     engines: {node: '>=12.22.0'}
 
-  '@pnpm/lockfile-types@7.1.1':
-    resolution: {integrity: sha512-ODa3AiqOT/DbFOb+oRpfvB78pJOcrIaCQON30Y2Z/qS7Gs66trTMNl37KabnNTvAEpyvlVGw8rli215fFh1fSA==}
+  '@pnpm/lockfile-types@7.1.2':
+    resolution: {integrity: sha512-+64KoK8gtTS5lxslW8ATtwwEbikW4e9i/OV5eaR+X+//5SeUA796uCN96sKu6q6OzpZi3/aVU4VgVe15MT9XKA==}
     engines: {node: '>=18.12'}
 
-  '@pnpm/merge-lockfile-changes@6.0.3':
-    resolution: {integrity: sha512-XFd+c1PzNK5TkLAqaG90RyA0RFIpwhvFxprEDxMVnu9d5Gq8ws4TWz0vy5oTZuKTPODmN7i01xZzEV2/+0KrOw==}
+  '@pnpm/merge-lockfile-changes@6.0.4':
+    resolution: {integrity: sha512-S15nSd/LPZKLArnMfHpQLgK7MvNYvSs9meb839Eh29pqp2wSPHLKOroK4Upbod6SOrGtihmgjmpLaFNAYschpg==}
     engines: {node: '>=18.12'}
 
   '@pnpm/network.ca-file@1.0.2':
@@ -1142,8 +1142,8 @@ packages:
   '@pnpm/ramda@0.28.1':
     resolution: {integrity: sha512-zcAG+lvU0fMziNeGXpPyCyCJYp5ZVrPElEE4t14jAmViaihohocZ+dDkcRIyAomox8pQsuZnv1EyHR+pOhmUWw==}
 
-  '@pnpm/types@10.1.1':
-    resolution: {integrity: sha512-xF8/Trk+ucZa2rUwEk1WgMtlfWUQN5bu6bGHCho+suN2pYrTy+vN+HgZ2SO1oa+6WoyuN5yllMMADOEXaHTOmA==}
+  '@pnpm/types@11.0.0':
+    resolution: {integrity: sha512-BSdk9nlYLHHHLrTFNpmdrXrXVc+1sY/E1Fs1zqR8pY/KjpjVhxkruLZuXitPRPxbk4jSqm7UnG5WCz008iiaig==}
     engines: {node: '>=18.12'}
 
   '@sec-ant/readable-stream@0.4.1':
@@ -5910,14 +5910,14 @@ snapshots:
 
   '@pnpm/config.env-replace@1.1.0': {}
 
-  '@pnpm/lockfile-types@7.1.1':
+  '@pnpm/lockfile-types@7.1.2':
     dependencies:
-      '@pnpm/types': 10.1.1
+      '@pnpm/types': 11.0.0
 
-  '@pnpm/merge-lockfile-changes@6.0.3':
+  '@pnpm/merge-lockfile-changes@6.0.4':
     dependencies:
-      '@pnpm/lockfile-types': 7.1.1
-      '@pnpm/types': 10.1.1
+      '@pnpm/lockfile-types': 7.1.2
+      '@pnpm/types': 11.0.0
       comver-to-semver: 1.0.0
       ramda: '@pnpm/ramda@0.28.1'
       semver: 7.6.2
@@ -5934,7 +5934,7 @@ snapshots:
 
   '@pnpm/ramda@0.28.1': {}
 
-  '@pnpm/types@10.1.1': {}
+  '@pnpm/types@11.0.0': {}
 
   '@sec-ant/readable-stream@0.4.1': {}
 
