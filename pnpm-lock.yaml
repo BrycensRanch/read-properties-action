@@ -107,7 +107,7 @@ importers:
         version: 28.6.0(@typescript-eslint/eslint-plugin@7.15.0(@typescript-eslint/parser@7.15.0(eslint@9.6.0)(typescript@5.5.3))(eslint@9.6.0)(typescript@5.5.3))(eslint@9.6.0)(jest@29.7.0(@types/node@20.14.10)(ts-node@10.9.2(@types/node@20.14.10)(typescript@5.5.3)))(typescript@5.5.3)
       eslint-plugin-no-one-time-vars:
         specifier: ^2.5.0
-        version: 2.6.0(eslint@9.6.0)
+        version: 2.6.1(eslint@9.6.0)
       eslint-plugin-prettier:
         specifier: ^5.1.3
         version: 5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@9.6.0))(eslint@9.6.0)(prettier@3.3.2)
@@ -2219,8 +2219,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
 
-  eslint-plugin-no-one-time-vars@2.6.0:
-    resolution: {integrity: sha512-W2BsNbB/631nIH2IVqxAZJiNNEymVl9cEu6h2sAV7caqjJdAW/OeGtdKd66/vPi+3OrfnkI6dXMuBC8NUC77gA==}
+  eslint-plugin-no-one-time-vars@2.6.1:
+    resolution: {integrity: sha512-BbmrYm7eMbnPFL5Im8diUV23EH4eePfduzgLL3YybUU0pdTjMc/HFoGI1ZcErNae0T8QOHWG21QwUyVPaDyNdQ==}
     engines: {node: 12.x || 14.x || >= 16}
     peerDependencies:
       eslint: '>=6'
@@ -7232,7 +7232,7 @@ snapshots:
       object.fromentries: 2.0.7
       semver: 6.3.1
 
-  eslint-plugin-no-one-time-vars@2.6.0(eslint@9.6.0):
+  eslint-plugin-no-one-time-vars@2.6.1(eslint@9.6.0):
     dependencies:
       eslint: 9.6.0
       requireindex: 1.2.0
