@@ -29,7 +29,7 @@
 		"gradle.properties"
 	],
 	"dependencies": {
-		"@actions/core": "1.10.1",
+		"@actions/core": "1.11.0",
 		"@pnpm/merge-lockfile-changes": "^6.0.1",
 		"action-input-parser": "^1.2.38",
 		"glob": "^11.0.0",
