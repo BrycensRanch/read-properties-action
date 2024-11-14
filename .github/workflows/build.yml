@@ -61,7 +61,7 @@ jobs:
       - name: Build Action
         run: pnpm package
 
-      - uses: codecov/codecov-action@v4
+      - uses: codecov/codecov-action@v5
         name: 💣 Upload coverage to Codecov
         with:
           flags: unittests # optional
