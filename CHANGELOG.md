@@ -1,3 +1,12 @@
+## [1.0.3](https://github.com/BrycensRanch/read-properties-action/compare/v1.0.2...v1.0.3) (2024-11-20)
+
+
+### Bug Fixes
+
+* recompile action with node 20 ([9f619e7](https://github.com/BrycensRanch/read-properties-action/commit/9f619e7e61550465c783eacc7b2bf6fc43928453))
+* **release:** finalize bumping dependencies ([ebb947c](https://github.com/BrycensRanch/read-properties-action/commit/ebb947c8d52c6f60fa8cbca8981d6070603c0448))
+* use node20 instead of eol node16 ([72101c1](https://github.com/BrycensRanch/read-properties-action/commit/72101c1c4dd988b0507a7c2886369e01ce0e48fb))
+
 ## [1.0.4](https://github.com/BrycensRanch/read-properties-action/compare/v1.0.3...v1.0.4) (2024-05-30)
 
 
