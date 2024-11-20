@@ -4,7 +4,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"prepare": "husky install",
+		"prepare": "husky",
 		"build": "tsc",
 		"clean": "rimraf lib dist coverage",
 		"check-types": "tsc --noEmit --pretty",
