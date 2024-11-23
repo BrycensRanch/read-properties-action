@@ -1,3 +1,10 @@
+## [1.0.3-next.3](https://github.com/BrycensRanch/read-properties-action/compare/v1.0.3-next.2...v1.0.3-next.3) (2024-11-23)
+
+
+### Bug Fixes
+
+* **release:** finalize bumping dependencies ([ebb947c](https://github.com/BrycensRanch/read-properties-action/commit/ebb947c8d52c6f60fa8cbca8981d6070603c0448))
+
 ## [1.0.3-next.2](https://github.com/BrycensRanch/read-properties-action/compare/v1.0.3-next.1...v1.0.3-next.2) (2024-05-29)
 
 
