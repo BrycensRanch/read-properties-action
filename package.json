@@ -62,7 +62,7 @@
 		"eslint-config-airbnb-typescript": "^18.0.0",
 		"eslint-config-airbnb-typescript-prettier": "^5.0.0",
 		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-jest": "28.9.0",
+		"eslint-plugin-jest": "28.10.0",
 		"eslint-plugin-no-one-time-vars": "^2.5.0",
 		"eslint-plugin-prettier": "^5.1.3",
 		"eslint-plugin-unicorn": "^56.0.0",
