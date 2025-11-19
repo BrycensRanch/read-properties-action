@@ -32,7 +32,7 @@
 		"@actions/core": "1.11.1",
 		"@pnpm/merge-lockfile-changes": "^6.0.1",
 		"action-input-parser": "^1.2.38",
-		"glob": "^11.0.0",
+		"glob": "^12.0.0",
 		"properties-file": "^3.5.4"
 	},
 	"devDependencies": {
