@@ -22,7 +22,7 @@ importers:
         version: 13.0.0
       properties-file:
         specifier: ^3.5.4
-        version: 3.6.5
+        version: 3.7.0
     devDependencies:
       '@babel/plugin-transform-async-to-generator':
         specifier: ^7.24.6
@@ -4150,8 +4150,8 @@ packages:
   prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
 
-  properties-file@3.6.5:
-    resolution: {integrity: sha512-MS5bhddm0jbc2F2yXQBCps8I0LZdEzOAPf/msaxtGW+coeepzR2KXAVJ7Zku4YkzqbD5shaoMO7lM56D2plSkg==}
+  properties-file@3.7.0:
+    resolution: {integrity: sha512-bqVtLPcBjT7/11vRwoVj9J5zWqVXU+JkCPCLrBKKlbbFWLK3+j3ucTibvsO/pvq5lVzws5uUaIPRp7OKgDOcNg==}
 
   proto-list@1.2.4:
     resolution: {integrity: sha512-vtK/94akxsTMhe0/cbfpR+syPuszcuwhqVjJq26CuNDgFGj682oRBXOP5MJpv2r7JtE8MsiepGIqvvOTBwn2vA==}
@@ -9655,7 +9655,7 @@ snapshots:
       object-assign: 4.1.1
       react-is: 16.13.1
 
-  properties-file@3.6.5: {}
+  properties-file@3.7.0: {}
 
   proto-list@1.2.4: {}
 
